@@ -1,0 +1,16 @@
+#reservasi {
+  width: 80%;
+  height: 200px;
+  background-color: rgb(2, 2, 34);
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.content-about {
+  margin: auto;
+}
+
+section {
+  background-image: url('../images/holiday2.jpg');
+}
