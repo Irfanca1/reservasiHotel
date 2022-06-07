@@ -115,6 +115,7 @@ if ($nmak > $bts) {
                     <a class="nav-link active text-light" aria-current="page" href="index.php">Home</a>
                     <a class="nav-link text-light" href="kamar.php">Kamar</a>
                     <a class="nav-link text-light" href="fasilitas.php">Fasilitas</a>
+                    <a class="nav-link text-light" href="datapesanan.php">Pesanan</a>
                 </div>
             </div>
             <a class="nav-link text-light float-end"><?= $nama; ?></a>
