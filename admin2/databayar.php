@@ -1,4 +1,5 @@
 <?php include "view/sidebar.php"; ?>
+
 <!-- Content Wrapper -->
 <div id="content-wrapper" class="d-flex flex-column">
 
@@ -17,7 +18,7 @@
 
             <!-- Page Heading -->
             <h1 class="h3 mb-4 text-gray-800 mt-5">Data Pembayaran</h1>
-            <div id="kanan">
+            <div id="kanan" class="overflow-auto">
                 <?php
                 if (isset($_GET['keyword'])) {
                     $cari = $_GET['keyword'];
@@ -34,7 +35,6 @@
                             <th scope="col">No Rekening</th>
                             <th scope="col">Nama Pemilik Rekening</th>
                             <th scope="col">Bukti Pembayaran</th>
-                            <th scope="col">Bukti Lain</th>
                         </tr>
                     </thead>
                     <?php
@@ -58,7 +58,6 @@
                         $norek   = $row['norek'];
                         $namarek = $row['namarek'];
                         $gambar  = $row['gambar'];
-                        $gambar2 = $row['gambar2'];
 
                     ?>
                         <tbody>
@@ -70,7 +69,6 @@
                                 <td><?= $norek; ?></td>
                                 <td><?= $namarek; ?></td>
                                 <td><a href="../images/<?= $gambar; ?>" target="_blank"><img src="../images/<?= $gambar; ?>" alt="Bukti" width="100ox" width="50px"></a></td>
-                                <td><a href="../images/<?= $gambar2; ?>" target="_blank"><img src="../images/<?= $gambar2; ?>" alt="Bukti" width="100ox" width="50px"></a></td>
                             </tr>
                         </tbody>
                     <?php

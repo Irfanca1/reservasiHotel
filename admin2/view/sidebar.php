@@ -123,12 +123,11 @@ if ($nmak > $bts) {
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="./lihatkamar.php">Lihat Kamar</a>
                         <a class="collapse-item" href="./tambahkamar.php">Tambah Kamar</a>
-                        <a class="collapse-item" href="cards.html">Tipe Kamar</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Check IN / Out -->
+            <!-- Transaksi -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-key"></i>
@@ -143,51 +142,6 @@ if ($nmak > $bts) {
                     </div>
                 </div>
             </li>
-
-
-            <!-- Room Services -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                    <i class="fas fa-fw fa-dolly-flatbed"></i>
-                    <span>Room Services</span>
-                </a>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="buttons.html">Pesan Layanan / Produk</a>
-                        <a class="collapse-item" href="cards.html">Pembersihan Kamar</a>
-                    </div>
-                </div>
-            </li>
-
-
-            <!-- Layanan -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                    <i class="fas fa-fw fa-utensils"></i>
-                    <span>Layanan</span>
-                </a>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="buttons.html">Lihat Layanan</a>
-                        <a class="collapse-item" href="cards.html">Tambah Layanan</a>
-                        <a class="collapse-item" href="cards.html">Kategori Layanan</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Buku Tamu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                    <i class="fas fa-fw fa-book"></i>
-                    <span>Buku Tamu</span>
-                </a>
-                <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="buttons.html">Lihat Buku Tamu</a>
-                    </div>
-                </div>
-            </li>
-
 
 
             <!-- User Manager -->

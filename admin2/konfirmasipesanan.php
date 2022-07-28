@@ -16,7 +16,7 @@
             </form>
             <!-- Page Heading -->
             <h3 class="mb-4 text-gray-800 text-center mt-3">Konfirmasi Pemesanan</h3>
-            <div id="kanan">
+            <div id="kanan" class="overflow-auto">
                 <?php
                 if (isset($_GET['keyword'])) {
                     $cari = $_GET['keyword'];

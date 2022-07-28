@@ -55,55 +55,9 @@
   $namaFileBaru .= '.';
   $namaFileBaru .= $ekstensiGambar;
 
-  //$sqlsimpan = mysqli_query($conn, "INSERT INTO pembayaran(idpesan, nama, jumlah, bank, norek, namarek, gambar) VALUES('$idpesan', '$nama', '$jumlah', '$bank', '$norek', '$namarek', '$namaFileBaru')");
+  $sqlsimpan = mysqli_query($conn, "INSERT INTO pembayaran(idpesan, nama, jumlah, bank, norek, namarek, gambar) VALUES('$idpesan', '$nama', '$jumlah', '$bank', '$norek', '$namarek', '$namaFileBaru')");
 
   move_uploaded_file($tmpName, '../images/' . $namaFileBaru);
-
-
-
-  $namaFile2 = $_FILES['gambar2']['name'];
-  $ukuranFile2 = $_FILES['gambar2']['size'];
-  $error2 = $_FILES['gambar2']['error'];
-  $tmpName2 = $_FILES['gambar2']['tmp_name'];
-
-  // cek apakah tidak ada gambar yang diupload
-  if ($error === 4) {
-    echo "<script>
-				alert('pilih gambar terlebih dahulu!');
-			  </script>";
-    return false;
-  }
-
-  // cek apakah yang diupload adalah gambar
-  $ekstensiGambarValid2 = ['jpg', 'jpeg', 'png'];
-  $ekstensiGambar2 = explode('.', $namaFile);
-  $ekstensiGambar2 = strtolower(end($ekstensiGambar2));
-  if (!in_array($ekstensiGambar, $ekstensiGambarValid2)) {
-    echo "<script>
-				alert('yang anda upload bukan gambar!');
-			  </script>";
-    return false;
-  }
-
-  // cek jika ukurannya terlalu besar
-  if ($ukuranFile2 > 1000000) {
-    echo "<script>
-				alert('ukuran gambar terlalu besar!');
-			  </script>";
-    return false;
-  }
-
-  // lolos pengecekan, gambar siap diupload
-  // generate nama gambar baru
-  $namaFileBaru2 = uniqid();
-  $namaFileBaru2 .= '.';
-  $namaFileBaru2 .= $ekstensiGambar;
-
-  $sqlsimpan2 = mysqli_query($conn, "INSERT INTO pembayaran(idpesan, nama, jumlah, bank, norek, namarek, gambar, gambar2) VALUES('$idpesan', '$nama', '$jumlah', '$bank', '$norek', '$namarek', '$namaFileBaru', '$namaFileBaru2')");
-
-  move_uploaded_file($tmpName2, '../images/' . $namaFileBaru2);
-
-  // return $namaFileBaru;
 
   echo "<script>swal({
 	  	type: 'success',

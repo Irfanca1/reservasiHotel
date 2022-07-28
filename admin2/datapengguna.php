@@ -18,7 +18,7 @@
 
             <!-- Page Heading -->
             <h1 class="h3 mb-4 text-gray-800 mt-5">Data Pengguna</h1>
-            <div id="kanan">
+            <div id="kanan" class="overflow-auto">
                 <?php
                 if (isset($_GET['keyword'])) {
                     $cari = $_GET['keyword'];

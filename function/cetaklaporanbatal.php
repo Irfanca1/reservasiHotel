@@ -3,7 +3,7 @@ require_once "koneksi.php";
 
 require_once("../fpdf184/fpdf.php");
 
-$query  = mysqli_query($conn, "SELECT * FROM pemesanan WHERE status='Berhasil..'");
+$query  = mysqli_query($conn, "SELECT * FROM pemesanan WHERE status='Dibatalkan..'");
 $pdf = new FPDF('L', 'cm', 'A4');
 
 $pdf->SetMargins(0.5, 1, 1);
@@ -64,7 +64,7 @@ $pdf->ln(1);
 $pdf->SetFont('Arial', 'B', 9);
 $pdf->Cell(40.5, 0.7, "Technical Name", 0, 10, 'C');
 # NAMA FILE KETIKA DI PRINT
-$pdf->Output("laporan_berhasil.pdf", "I");
+$pdf->Output("laporan_batal.pdf", "I");
 // $sql = $query->fetch_assoc();
 // $data = array();
 // while ($sql) {

@@ -59,10 +59,6 @@ $total = $datax['totalbayar'];
 						<td>Upload Bukti Transfer</td>
 						<td><input type="file" name="gambar" id="gambar" required="required"></td>
 					</tr>
-					<tr>
-						<td>Upload Bukti 2</td>
-						<td><input type="file" name="gambar2" id="gambar2" required="required"></td>
-					</tr>
 				</table>
 				<input type="submit" name="submit" value="Kirim" id="tombol" class="text-dark">
 			</form>
